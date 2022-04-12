@@ -62,16 +62,17 @@ module.exports = {
                         loader: "postcss-loader",
                         options: {
                             postcssOptions: {
-                                plugins: [
-                                    [
-                                        "postcss-preset-env",
-                                        {
-                                            // Options
-                                        }
-                                    ]
-                                ]
+                                plugins: [["postcss-preset-env"]]
                             }
                         }
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: "file-loader"
                     }
                 ]
             }

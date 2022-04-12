@@ -20,7 +20,7 @@ const LinkItem = ({ link, icons: LinkStarIcons, onClickLink }) => {
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className={`group flex items-center rounded-2xl bg-white py-3 mb-4 px-4 last:mb-0 transition-all outline-none border-2 hover:scale-105 text-zinc-700 ${
+                className={`group flex items-center rounded-2xl bg-white/60 py-3 mb-4 px-4 last:mb-0 transition-all outline-none border-2 border-cyan-500 hover:scale-105 text-cyan-800 ${
                     !is_published && "opacity-60"
                 } shadow-md`}
                 onClick={handleClick}

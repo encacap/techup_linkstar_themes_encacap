@@ -1,4 +1,5 @@
 import React from "react";
+import backgroundImage from "./assets/images/background.png";
 import LinkItem from "./components/LinkItem";
 
 export const App = ({
@@ -15,17 +16,12 @@ export const App = ({
                 <div className="relative w-full h-full">
                     <div className="absolute w-full h-full">
                         <img
-                            src={
-                                themeConfigs.cover ||
-                                user.cover_img_absolute ||
-                                user.avatar_img_absolute ||
-                                themeConfigs.default_avatar
-                            }
+                            src={backgroundImage}
                             className="object-cover object-center w-full h-full"
                             alt={user.username}
                         />
                     </div>
-                    <div className="relative grid min-h-full backdrop-blur-2xl bg-white/30">
+                    <div className="relative grid min-h-full">
                         <div className="relative z-10 flex flex-col h-full text-stone-700">
                             <div>
                                 {user.cover_img_absolute ? (
